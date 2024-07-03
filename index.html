@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-hamburguer" onclick="toggleMenu()">
+             &#9776;
+        </div>
+      
+        <nav class="menu">
+            <a href="Painel">Painel</a>
+            <a href="Perfil">Perfil</a> 
+            <a href="Cadastrar">Cadastrar</a>
+            <a href="Entrar">Entrar</a>
+        </nav>
+    </header>
+    <main>
+        <div class="social-card">
+            <div class="social-login">
+                <h2>Login</h2>
+                <a href="#" class="social-icon facebook">
+                    <img src="fotos.img/facebook.png" alt="Login com Facebook">
+                </a>
+                <a href="#" class="social-icon github">
+                    <img src="fotos.img/github.png" alt="Login com GitHub">
+                </a>
+                <a href="#" class="social-icon google">
+                    <img src="fotos.img/google.jpeg" alt="Login com Google">
+                </a>
+            </div>
+        </div>
+        <div class="login-container">
+            <form class="login-form">
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Login</button>
+                <div class="remember-forgot">
+                    <label>
+                        <input class="form-check-input" type="checkbox" id="Lembrar"> Lembrar senha
+                    </label>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="#">Tim Criativo</a></li>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Licença</a></li>
+        </ul>
+        
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
